@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Title</title>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet " href="custom.css">
+</head>
+
+<body>
+    <div class="fondo2">
+        <div class="encabezado2">
+            <h1 class="centrar"> Inspo </h1>
+        </div>
+        <form>
+            <div class="portada2">
+                <p> Pincha el siguiente boton y podras ver inspiraciones para tu outfit diario</p>
+                <div class="form-check">
+                    <label class="form-check-label">
+                        <input type="checkbox" onchange="mostrarOutfits(this)" class="form-check-input" name="" id=""
+                            value="checkedValue">
+                        Ideas
+                    </label>
+                </div>
+            </div>
+            <div id="outfits" class="row">
+
+                <div class="col">
+                    <div class="form-group">
+                        <img src="IMG_4033.jpg" widht="300" height="300">
+                        <img src="IMG_4029.jpg" widht="300" height="300">
+                        <img src="IMG_4028.jpg" widht="300" height="300">
+                        <img src="IMG_4030.jpg" widht="300" height="300">
+                        <img src="IMG_4031.jpg" widht="300" height="300">
+                        <img src="IMG_4032.jpg" widht="300" height="300">
+                        <img src="IMG_4038.jpg" widht="300" height="300">
+                        <img src="IMG_4039.jpg" widht="300" height="300">
+                    </div>
+                </div>
+            </div>
+
+        </form>
+    </div>
+
+
+
+
+</body>
+
+<script type="text/javascript">
+    function mostrarOutfits(checkBox) {
+        if (checkBox.checked) {
+            document.getElementById("outfits").style.display = "flex";
+        }
+        else {
+            document.getElementById("outfits").style.display = "none";
+        }
+    }
+
+</script>
+
+</html>
